@@ -17,7 +17,7 @@
     <input type="text" v-model="firstName" />
 
     <label>Last Name</label>
-    <input type="text" v-bind:value="lastName" v-on:input="updateLastName" />
+    <input type="text" v-bind:value="lastName" v-on:input="updateLastName('Last Name Event Triggered', $event)" />
 
     <button type="button" v-on:click="increment">Increment</button>
     <button type="button" v-on:click="age--">Decrement</button>
